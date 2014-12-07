@@ -88,15 +88,15 @@ class Parser
           token = tokens[0]
           current = @addStart(current, token.tag, token.args, token.text)
         catch e
-          if @isAllowedAnywhere(current, tokens[0].tag) and
+          if not @isAllowedAnywhere(current, tokens[0].tag) and
              current.tag.invalidStartRecovery isnt Tag.RECOVERY_ADD
             recovery = Tag.RECOVERY_STRING
           else
             recovery = current.tag.invalidStartRecovery
 
           if @isAllowedAnywhere(current, tokens[0].tag) and
-             current.tag.invalidStartRecovery isnt Tag.RECOVERY_ADD
-            recovery = Tag.RECOVERY_STRING
+             current.tag.invalidStartRecovery is Tag.RECOVERY_ADD
+            recovery = Tag.RECOVERY_CLOSE
 
           switch recovery
             when Tag.RECOVERY_ADD

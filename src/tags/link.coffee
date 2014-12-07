@@ -12,4 +12,4 @@ class LinkTag extends SimpleTag
     if url.substr(0, 4) isnt "http"
       url = "http://#{url}"
 
-    url
+    "<a href=\"#{url}\">#{content}</a>"

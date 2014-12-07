@@ -25,6 +25,7 @@ do (root = this, factory = (root, XRegExp) ->
 
   // @include ../tags/link.js
   // @include ../tags/image.js
+  // @include ../tags/video.js
   // @include ../tags/quote.js
 
   // @include ../tags/list.js
@@ -48,6 +49,7 @@ do (root = this, factory = (root, XRegExp) ->
   parser.registerTag(new TriggerTag)
   parser.registerTag(new LinkTag)
   parser.registerTag(new ImageTag)
+  parser.registerTag(new VideoTag)
   parser.registerTag(new QuoteTag)
   parser.registerTag(new ListTag)
   parser.registerTag(new ListItemTag)
