@@ -1,4 +1,7 @@
 class MonospaceTag extends SimpleTag
   tag: "m"
   name: "monospace"
-  format: "<span class=\"inline-code\">%content%</span>"
+
+  html: (content) ->
+    content = content.replace(/\<br\>/gi, "")
+    "<span class=\"inline-code\">%content%</span>".replace("%content%", content)
