@@ -38,7 +38,7 @@ do (root = this, factory = (root, XRegExp) ->
   parser = new Parser
 
   parser.registerTag(new BoldTag)
-  parser.registerTag(new MonotypeTag)
+  parser.registerTag(new MonospaceTag)
   parser.registerTag(new UnderlineTag)
   parser.registerTag(new StrikeTag)
   parser.registerTag(new ItalicTag)
