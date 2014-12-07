@@ -1,4 +1,4 @@
 class MonotypeTag extends SimpleTag
   tag: "m"
-  name: "monotype"
-  format: "<div class=\"code\">%content%</div>"
+  name: "monospace"
+  format: "<span class=\"inline-code\">%content%</span>"

@@ -29,6 +29,10 @@ do (root = this, factory = (root, XRegExp) ->
 
   // @include ../tags/list.js
   // @include ../tags/list_item.js
+
+  // @include ../tags/table.js
+  // @include ../tags/table_row.js
+  // @include ../tags/table_cell.js
   `
 
   parser = new Parser
@@ -47,6 +51,9 @@ do (root = this, factory = (root, XRegExp) ->
   parser.registerTag(new QuoteTag)
   parser.registerTag(new ListTag)
   parser.registerTag(new ListItemTag)
+  parser.registerTag(new TableTag)
+  parser.registerTag(new TableRowTag)
+  parser.registerTag(new TableCellTag)
 
   parser
 ) ->
