@@ -21,6 +21,6 @@
     "tmp"
   ],
   "dependencies": {
-    "xregexp": "3.0.0-pre"
+    "xregexp": "master"
   }
 }
