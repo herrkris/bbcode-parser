@@ -10,10 +10,10 @@ class Tag
     @invalidStringRecovery = Tag.RECOVERY_NONE
     @invalidStartRecovery = Tag.RECOVERY_STRING
     @invalidRecoveryAddTag = ""
-    @tag = null
-    @description = ""
-    @allowedTags = []
-    @text = ""
+    @tag = @tag or null
+    @description = @description or ""
+    @allowedTags = @allowedTags or []
+    @text = @text or ""
 
   initialize: (tag, name) ->
     @tag = tag

@@ -5,7 +5,7 @@ class ListItemTag extends Tag
     @setInvalidStartRecovery(Tag.RECOVERY_CLOSE)
     @setInvalidEndRecovery(Tag.RECOVERY_CLOSE)
 
-  html = (content) ->
+  html: (content) ->
     if content.replace("<br>", "").trim().length is 0
       return ""
     else

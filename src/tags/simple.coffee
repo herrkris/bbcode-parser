@@ -9,13 +9,13 @@ class SimpleTag extends Tag
 
   initialize: (tag, name) ->
     super
-    @setInvalidStartRecovery(BBCodeTag.RECOVERY_CLOSE)
-    @setInvalidEndRecovery(BBCodeTag.RECOVERY_REOPEN)
+    @setInvalidStartRecovery(Tag.RECOVERY_CLOSE)
+    @setInvalidEndRecovery(Tag.RECOVERY_REOPEN)
 
   initializeWithAllowedTags: (tag, name, allowed) ->
     super
-    @setInvalidStartRecovery(BBCodeTag.RECOVERY_CLOSE)
-    @setInvalidEndRecovery(BBCodeTag.RECOVERY_REOPEN)
+    @setInvalidStartRecovery(Tag.RECOVERY_CLOSE)
+    @setInvalidEndRecovery(Tag.RECOVERY_REOPEN)
 
   html: (content) ->
     if @format

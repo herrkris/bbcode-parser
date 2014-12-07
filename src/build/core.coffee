@@ -51,7 +51,7 @@ do (root = this, factory = (root, XRegExp) ->
   parser
 ) ->
   if typeof define is "function" and define.amd
-    define ['XRegExp'], (XRegExp) ->
+    define ['xregexp'], (XRegExp) ->
       root.BBCodeParser = factory(root, XRegExp)
   else if typeof exports isnt "undefined"
     module.exports = factory(root, XRegExp)

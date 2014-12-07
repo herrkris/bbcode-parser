@@ -7,5 +7,5 @@ class ListTag extends Tag
     @setInvalidStringRecovery(Tag.RECOVERY_ADD)
     @setInvalidRecoveryTag("*")
 
-  html = (content) ->
+  html: (content) ->
     "<ul>#{content}</ul>"
