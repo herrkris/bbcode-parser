@@ -1,0 +1,1 @@
+class InvalidTokenException extends Error

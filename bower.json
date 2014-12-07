@@ -1,0 +1,26 @@
+{
+  "name": "bbcodeparser",
+  "description": "A BBCode parser for the bbPhone Application",
+  "homepage": "https://github.com/herrkris/bbphone-app",
+  "main": "./lib/bbcodeparser.js",
+  "version": "0.0.1",
+  "keywords": [
+    "bbcode",
+    "parser"
+  ],
+  "author": {
+    "name": "Kristof Dreier",
+    "email": "kontakt@kristofdreier.de"
+  },
+  "ignore": [
+    ".gitignore",
+    "build",
+    "Gruntfile.js",
+    "CONTRIBUTING.md",
+    "package.json",
+    "tmp"
+  ],
+  "dependencies": {
+    "xregexp": "3.0.0-pre"
+  }
+}
